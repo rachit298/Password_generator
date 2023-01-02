@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Password generator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image"
+      href="https://cdn.pixabay.com/photo/2013/04/01/21/31/parking-99212__340.png"
+    />
+  </head>
+  <body>
+    <div id="contentBody">
+      <div id="wholeContent">
+        <h1 id="firstLineOfContent">Generate a</h1>
+        <h1 id="secondLineOfContent">random password</h1>
+        <div id="para">
+          <p>Never use an insecure password again.</p>
+          <p>Enter length you want below. If no, Leave below box empty.</p>
+        </div>
+        <input
+          type="text"
+          inputmode="numeric"
+          placeholder="Enter password length here"
+          id="passLength"
+        />
+        <div id="checkboxes">
+          <div>
+            <input type="checkbox" name="numbers" id="numbers" checked />
+            <label for="numbers">Include numbers in your password?</label>
+          </div>
+          <div>
+            <input type="checkbox" name="symbols" id="symbols" checked />
+            <label for="symbols">Include symbols in your password?</label>
+          </div>
+        </div>
+        <div id="buttonContainer">
+          <button onclick="generatePass()" id="generateButton">
+            Generate passwords
+          </button>
+          <hr />
+          <div id="passwords">
+            <button onclick="copyText1()" id="pass1"></button>
+            <button onclick="copyText2()" id="pass2"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./passwordGenerator.js"></script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: Karla;
+  src: url("./Karla-VariableFont_wght.ttf");
+}
+body {
+  background-color: rgba(28, 28, 28, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  font-family: Karla, "Courier New", Courier, monospace;
+}
+
+#contentBody {
+  max-width: 60vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: rgba(31, 41, 55, 1);
+  padding: 20px;
+}
+
+#wholeContent {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+#firstLineOfContent {
+  color: white;
+}
+#secondLineOfContent {
+  color: rgba(74, 223, 134, 1);
+}
+
+#para {
+  line-height: 1.4rem;
+}
+
+#passLength {
+  margin-bottom: 10px;
+  border-bottom-color: rgba(74, 223, 134, 1);
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  background-color: rgba(31, 41, 55, 1);
+  color: white;
+  height: 35px;
+  margin-top: 2px;
+}
+
+#passLength:focus {
+  outline: none;
+}
+
+#checkboxes {
+  line-height: 1.6rem;
+  margin-bottom: 15px;
+}
+
+#numbers,
+#symbols {
+  transform: scale(1.6);
+  margin: 5px;
+  accent-color: rgba(74, 223, 134, 1);
+}
+
+#buttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#generateButton {
+  height: 42px;
+  width: 210px;
+  background-color: rgba(16, 185, 129, 1);
+  color: white;
+  text-align: center;
+  font-weight: light;
+  border: none;
+  border-radius: 6px;
+}
+
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  color: rgba(47, 62, 83, 1);
+}
+
+#passwords {
+    width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#pass1,
+#pass2 {
+  height: 42px;
+  width: 210px;
+  background-color: rgba(39, 53, 73, 1);
+  color: rgba(85, 249, 145, 1);
+  border: none;
+  border-radius: 6px;
+}

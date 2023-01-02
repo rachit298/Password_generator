@@ -148,5 +148,5 @@ function copyText2() {
 
 function copy(text) {
     navigator.clipboard.writeText(text);
-    alert("Password copied to clipboard.");
+    alert("Password copied!");
 }
